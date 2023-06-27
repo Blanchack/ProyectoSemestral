@@ -6,18 +6,23 @@ public class Asiento {
         SALON_CAMA, SEMI_CAMA, ESTANDAR
     }
 
+    private int id;
     private TipoAsiento type;
     private boolean select;
     private boolean comprado;
 
 
-    public Asiento(TipoAsiento type){
+    public Asiento(int id, TipoAsiento type){
+        this.id = id;
         this.type = type;
         select = false;
         comprado = false;
     }
 
-    TipoAsiento getType() { return type;}
+    public int getId(){return id;}
+
+    public TipoAsiento getType() { return type;}
+
     void select(){
         select = true;
     }
@@ -28,7 +33,6 @@ public class Asiento {
     void comprar(){
         this.comprado = true;
         this.select = false;
-
     }
 
     boolean isSelect(){ return select;}

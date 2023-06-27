@@ -27,15 +27,22 @@ public class Viaje {
         asientos = new ArrayList<Asiento>();
 
         for(int i = 0; i < nCama; i++){
-            asientos.add(new Asiento(Asiento.TipoAsiento.SALON_CAMA));
+            asientos.add(new Asiento(i, Asiento.TipoAsiento.SALON_CAMA));
+            //System.out.println(i);
         }
-        for(int i = nCama; i < nSemi; i++){
-            asientos.add(new Asiento(Asiento.TipoAsiento.SEMI_CAMA));
+        for(int i = nCama; i < nSemi+nCama; i++){
+            asientos.add(new Asiento(i, Asiento.TipoAsiento.SEMI_CAMA));
+            System.out.println(i);
         }
         for(int i = nSemi+nCama; i < nAsientos; i++){
-            asientos.add(new Asiento(Asiento.TipoAsiento.ESTANDAR));
+            asientos.add(new Asiento(i, Asiento.TipoAsiento.ESTANDAR));
+            //System.out.println(i);
         }
     }
+
+    public Asiento getAsiento(int id) {return asientos.get(id);};
+
+    public int getnAsientos() { return nAsientos;}
 
     public void seleccionarAsiento(int id){
         asientos.get(id).select();
