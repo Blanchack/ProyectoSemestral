@@ -10,10 +10,16 @@ public class Ventana extends JFrame {
     Ventana(){
         this.setLayout(new BorderLayout());
 
-        Viaje viaje = new Viaje(1, 40, "conce", "santiaog", 10, 10, 100, 200, 300);
+        Viaje viaje = new Viaje(0, 0, " ", "", 0, 0, 0,0 , 0, 0, 0);
         AsientosGrid grid = new AsientosGrid(viaje, 4, 10);
+        ListaViajes viajes = new ListaViajes();
 
-        this.add(grid, BorderLayout.WEST);
+        MenuAsientos singleton = MenuAsientos.getInstance(grid);
+
+        this.add(singleton, BorderLayout.EAST);
+
+        JScrollPane scrollPanel = new JScrollPane(viajes, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.add(scrollPanel, BorderLayout.WEST);
 
         this.setTitle("Reserva Viajes 3000");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

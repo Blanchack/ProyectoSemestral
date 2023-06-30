@@ -1,12 +1,10 @@
 package GUI;
 
-import Logica.Asiento;
 import Logica.Viaje;
+import Wrappers.AsientoWrapper;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class AsientosGrid extends JPanel {
     Viaje viaje;

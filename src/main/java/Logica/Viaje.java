@@ -11,18 +11,23 @@ public class Viaje {
     private int pEstandar;
     private int pSCama;
     private int pCama;
+    private int filas;
+    private int columnas;
 
     private int pSeleccionado;
 
     private ArrayList<Asiento> asientos;
 
-    public Viaje(int id, int nAsientos, String salida, String destino, int nCama, int nSemi, int pEstandar, int pSCama, int pCama){
+    public Viaje(int id, int nAsientos, String salida, String destino, int nCama, int nSemi, int pEstandar, int pSCama, int pCama, int filas, int columnas){
+        this.id = id;
         this.nAsientos = nAsientos;
         this.salida = salida;
         this.destino = destino;
         this.pCama = pCama;
         this.pSCama = pSCama;
         this.pEstandar = pEstandar;
+        this.columnas = columnas;
+        this.filas = filas;
 
         asientos = new ArrayList<Asiento>();
 
@@ -78,5 +83,17 @@ public class Viaje {
         int precio = pSeleccionado;
         pSeleccionado = 0;
         return precio;
+    }
+
+    public int getId() {return id;}
+    public String getSalida() {return salida;}
+    public String getDestino() {return destino;}
+
+    public int getColumnas() {
+        return columnas;
+    }
+
+    public int getFilas() {
+        return filas;
     }
 }

@@ -23,10 +23,10 @@ public class Asiento {
 
     public TipoAsiento getType() { return type;}
 
-    void select(){
+    public void select(){
         select = true;
     }
-    void deselect(){
+    public void deselect(){
         select = false;
     }
 
@@ -35,5 +35,6 @@ public class Asiento {
         this.select = false;
     }
 
-    boolean isSelect(){ return select;}
+    public boolean isSelect(){ return select;}
+    public boolean isComprado() { return comprado;}
 }
