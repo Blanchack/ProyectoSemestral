@@ -49,8 +49,9 @@ public class Viaje {
 
     public int getnAsientos() { return nAsientos;}
 
-    public void seleccionarAsiento(int id){
+    public void seleccionarAsiento(int id) throws AsientoInvalido {
         asientos.get(id).select();
+
         pSeleccionado += getPrecioAsiento(asientos.get(id));
     }
     public void deseleccionarAsiento(int id){
@@ -74,14 +75,20 @@ public class Viaje {
         return -1;
     }
 
-    public int comprarAsientos(){
+    public int comprarAsientos() throws CompraInvalidaException {
+        boolean flag = false;
         for(int i = 0; i < nAsientos; i++){
             if(asientos.get(i).isSelect()){
                 asientos.get(i).comprar();
+                flag = true;
             }
         }
         int precio = pSeleccionado;
-        pSeleccionado = 0;
+
+        if(!flag){
+            throw new CompraInvalidaException("No hay asientos seleccionados.");
+        }
+
         return precio;
     }
 
@@ -97,24 +104,25 @@ public class Viaje {
         return filas;
     }
 
-    public int totalPrecio(Asiento.TipoAsiento type){
+    public int totalAsientos(Asiento.TipoAsiento type){
         int total = 0;
         for(int i = 0; i < nAsientos; i++){
             if(asientos.get(i).getType() == type && asientos.get(i).isSelect()){
-                switch (asientos.get(i).getType()){
-
-                    case SALON_CAMA -> {
-                        total += pCama;
-                    }
-                    case SEMI_CAMA -> {
-                        total += pSCama;
-                    }
-                    case ESTANDAR -> {
-                        total+= pEstandar;
-                    }
-                }
+                total++;
             }
         }
         return total;
+    }
+
+    public int getpEstandar() {
+        return pEstandar;
+    }
+
+    public int getpSCama() {
+        return pSCama;
+    }
+
+    public int getpCama() {
+        return pCama;
     }
 }

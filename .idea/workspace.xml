@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="44bfed61-fe03-4e6c-a1ce-172577da90d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MenuAsientos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/MenuAsientos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ResumenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ResumenCompra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Asiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Asiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Viaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/AsientoWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/AsientoWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/ViajeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/ViajeWrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progra2 Tarea2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">

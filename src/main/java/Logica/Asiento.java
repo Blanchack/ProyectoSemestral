@@ -23,9 +23,12 @@ public class Asiento {
 
     public TipoAsiento getType() { return type;}
 
-    public void select(){
-        if(comprado == false){
+    public void select() throws AsientoInvalido {
+        if(!comprado){
             select = true;
+        }
+        else{
+            throw new AsientoInvalido("Este Asiento ya esta comprado");
         }
     }
     public void deselect(){

@@ -2,6 +2,7 @@ package Wrappers;
 
 import GUI.ResumenCompra;
 import Logica.Asiento;
+import Logica.AsientoInvalido;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -23,6 +24,8 @@ public class AsientoWrapper extends JButton {
         //this.add(id);
         this.setPreferredSize(new Dimension(50, 10));
 
+        AsientoWrapper este = this;
+
         this.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,7 +33,12 @@ public class AsientoWrapper extends JButton {
                     asiento.deselect();
                 }
                 else{
-                    asiento.select();
+                    try {
+                        asiento.select();
+                    } catch (AsientoInvalido ex) {
+                        ex.printStackTrace();
+                        JOptionPane.showMessageDialog(este, "Este Asiento ya esta comprado.", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
                 }
                 setColor();
                 ResumenCompra.getInstance().updateCompra();
