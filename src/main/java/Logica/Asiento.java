@@ -24,7 +24,9 @@ public class Asiento {
     public TipoAsiento getType() { return type;}
 
     public void select(){
-        select = true;
+        if(comprado == false){
+            select = true;
+        }
     }
     public void deselect(){
         select = false;

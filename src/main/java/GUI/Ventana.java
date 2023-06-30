@@ -14,12 +14,16 @@ public class Ventana extends JFrame {
         AsientosGrid grid = new AsientosGrid(viaje, 4, 10);
         ListaViajes viajes = new ListaViajes();
 
-        MenuAsientos singleton = MenuAsientos.getInstance(grid);
+        MenuAsientos menuAsientos = MenuAsientos.getInstance(grid);
 
-        this.add(singleton, BorderLayout.EAST);
+        this.add(menuAsientos, BorderLayout.CENTER);
 
         JScrollPane scrollPanel = new JScrollPane(viajes, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         this.add(scrollPanel, BorderLayout.WEST);
+
+        ResumenCompra resumenCompra = ResumenCompra.getInstance();
+
+        this.add(resumenCompra, BorderLayout.EAST);
 
         this.setTitle("Reserva Viajes 3000");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

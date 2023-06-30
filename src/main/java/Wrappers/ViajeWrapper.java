@@ -2,6 +2,7 @@ package Wrappers;
 
 import GUI.AsientosGrid;
 import GUI.MenuAsientos;
+import GUI.ResumenCompra;
 import Logica.Viaje;
 
 import javax.swing.*;
@@ -28,6 +29,7 @@ public class ViajeWrapper extends JPanel {
                 AsientosGrid grid = new AsientosGrid(viaje, viaje.getFilas(), viaje.getColumnas());
                 MenuAsientos menu = MenuAsientos.getInstance(grid);
                 menu.changeGrid(grid ,String.valueOf(viaje.getId()) + "       " + viaje.getSalida()+ "-"+ viaje.getDestino());
+                ResumenCompra.getInstance().updateViaje(viaje);
             }
         });
 

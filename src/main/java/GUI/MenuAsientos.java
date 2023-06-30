@@ -18,7 +18,13 @@ public class MenuAsientos extends JPanel {
 
         titulo = new JLabel("Seleccione un viaje");
         this.add(titulo, BorderLayout.NORTH);
+
+        this.setBorder(BorderFactory.createEmptyBorder(0, 150,0,200));
+
         this.setVisible(true);
+
+        ResumenCompra.getInstance();
+
     }
 
     public void changeGrid(AsientosGrid asientosGrid, String str){

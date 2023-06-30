@@ -1,5 +1,6 @@
 package Wrappers;
 
+import GUI.ResumenCompra;
 import Logica.Asiento;
 
 import javax.swing.*;
@@ -25,8 +26,6 @@ public class AsientoWrapper extends JButton {
         this.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(asiento.isComprado()){return;}
-
                 if(asiento.isSelect()){
                     asiento.deselect();
                 }
@@ -34,6 +33,7 @@ public class AsientoWrapper extends JButton {
                     asiento.select();
                 }
                 setColor();
+                ResumenCompra.getInstance().updateCompra();
             }
         });
 
@@ -47,6 +47,7 @@ public class AsientoWrapper extends JButton {
         }
         if(asiento.isComprado()){
             this.setBackground(Color.RED);
+            return;
         }
         switch (asiento.getType()){
 

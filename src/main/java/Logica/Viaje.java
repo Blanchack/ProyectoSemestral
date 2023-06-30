@@ -96,4 +96,25 @@ public class Viaje {
     public int getFilas() {
         return filas;
     }
+
+    public int totalPrecio(Asiento.TipoAsiento type){
+        int total = 0;
+        for(int i = 0; i < nAsientos; i++){
+            if(asientos.get(i).getType() == type && asientos.get(i).isSelect()){
+                switch (asientos.get(i).getType()){
+
+                    case SALON_CAMA -> {
+                        total += pCama;
+                    }
+                    case SEMI_CAMA -> {
+                        total += pSCama;
+                    }
+                    case ESTANDAR -> {
+                        total+= pEstandar;
+                    }
+                }
+            }
+        }
+        return total;
+    }
 }
