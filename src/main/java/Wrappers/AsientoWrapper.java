@@ -14,7 +14,10 @@ public class AsientoWrapper extends JButton {
 
     Asiento asiento;
 
-
+    /**
+     * wrapper grafico de la clase asiento.
+     * @param asiento Asiento al cual se referencia.
+     */
     public AsientoWrapper(Asiento asiento){
         super(String.valueOf(asiento.getId()));
         this.asiento = asiento;
@@ -48,6 +51,9 @@ public class AsientoWrapper extends JButton {
         this.setVisible(true);
     }
 
+    /**
+     * Cambia el color de la representacion grafica dependiendo del estado del asiento.
+     */
     void setColor(){
         if(asiento.isSelect()){
             this.setBackground(Color.BLUE);

@@ -2,6 +2,9 @@ package Logica;
 
 import java.util.ArrayList;
 
+/**
+ * Representa un viaje
+ */
 public class Viaje {
 
     private int id;
@@ -18,6 +21,20 @@ public class Viaje {
 
     private ArrayList<Asiento> asientos;
 
+    /**
+     *
+     * @param id Numero de viaje
+     * @param nAsientos Cantidad de Asientos
+     * @param salida Terminal de salida
+     * @param destino Terminal de destino
+     * @param nCama Numero de asiento Salon Cama
+     * @param nSemi Numero de asientos Semi Cama
+     * @param pEstandar Precio del asiento estandar
+     * @param pSCama    precio del asiento Semi Cama
+     * @param pCama     Precio del asiento Salon Cama
+     * @param filas     Filas dentro del bus
+     * @param columnas  Columnas dentro del bus
+     */
     public Viaje(int id, int nAsientos, String salida, String destino, int nCama, int nSemi, int pEstandar, int pSCama, int pCama, int filas, int columnas){
         this.id = id;
         this.nAsientos = nAsientos;
@@ -75,6 +92,11 @@ public class Viaje {
         return -1;
     }
 
+    /**
+     * Compra todos los asientos seleccionados.
+     * @return El precio de todos los asientos seleccionados
+     * @throws CompraInvalidaException Si no hay ningun asiento seleccionado.
+     */
     public int comprarAsientos() throws CompraInvalidaException {
         boolean flag = false;
         for(int i = 0; i < nAsientos; i++){
@@ -84,6 +106,7 @@ public class Viaje {
             }
         }
         int precio = pSeleccionado;
+        pSeleccionado = 0;
 
         if(!flag){
             throw new CompraInvalidaException("No hay asientos seleccionados.");
@@ -104,6 +127,11 @@ public class Viaje {
         return filas;
     }
 
+    /**
+     *
+     * @param type Tipo de asiento a contar.
+     * @return El numero de asientos seleccionados de cierto tipo.
+     */
     public int totalAsientos(Asiento.TipoAsiento type){
         int total = 0;
         for(int i = 0; i < nAsientos; i++){

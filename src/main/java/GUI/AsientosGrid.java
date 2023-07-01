@@ -12,14 +12,19 @@ public class AsientosGrid extends JPanel {
     int width;
     int size;
 
-
-    public AsientosGrid(Viaje viaje, int width, int height){
+    /**
+     * Grilla de asientos para un viaje en especifico.
+     * @param viaje Viaje al cual generar la grilla.
+     * @param height Numero de filas.
+     * @param width Numero de columnas.
+     */
+    public AsientosGrid(Viaje viaje, int height, int width){
         size = viaje.getnAsientos();
 
         for(int i = 0; i < size; i++){
             this.add(new AsientoWrapper(viaje.getAsiento(i)));
         }
-        this.setLayout(new GridLayout(height, width));
+        this.setLayout(new GridLayout(width, height));
     }
 
 }

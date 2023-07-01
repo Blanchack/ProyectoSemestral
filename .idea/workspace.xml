@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44bfed61-fe03-4e6c-a1ce-172577da90d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/AsientosGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/AsientosGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ListaViajes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ListaViajes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MenuAsientos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/MenuAsientos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ResumenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ResumenCompra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Asiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Asiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Viaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/AsientoWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/AsientoWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/ViajeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/ViajeWrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,18 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/GUI/AsientosGrid.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/GUI/ResumenCompra.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Logica/Asiento.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/GUI/MenuAsientos.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Logica/Viaje.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Logica/AsientoInvalido.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Logica/CompraInvalidaException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Wrappers/ViajeWrapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Wrappers/AsientoWrapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/GUI/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2QptDyOHuPxprrYv7IpRPkCvrAR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -42,12 +60,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progra2 Tarea2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/repos/ProyectoSemestral",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.Main" />
@@ -66,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686062236968</updated>
       <workItem from="1686062238170" duration="814000" />
+      <workItem from="1688169138045" duration="3337000" />
     </task>
     <servers />
   </component>
@@ -82,6 +108,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

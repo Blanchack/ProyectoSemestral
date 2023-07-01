@@ -9,6 +9,11 @@ public class MenuAsientos extends JPanel {
     private JLabel titulo;
     private AsientosGrid grid;
 
+    /**
+     * Representacion grafica de los asientos en un viaje.
+     *
+     * @param agrid Grid de asientos a dibujar en la interfaz.
+     */
     private MenuAsientos(AsientosGrid agrid){
         grid = agrid;
         this.setLayout(new BorderLayout());
@@ -19,7 +24,7 @@ public class MenuAsientos extends JPanel {
         titulo = new JLabel("Seleccione un viaje");
         this.add(titulo, BorderLayout.NORTH);
 
-        this.setBorder(BorderFactory.createEmptyBorder(0, 150,0,200));
+        this.setBorder(BorderFactory.createEmptyBorder(0, 150,0,150));
 
         this.setVisible(true);
 
@@ -27,6 +32,11 @@ public class MenuAsientos extends JPanel {
 
     }
 
+    /**
+     * Cambiar la grilla de asientos visible.
+     * @param asientosGrid Nueva Grilla.
+     * @param str   Titulo superior.
+     */
     public void changeGrid(AsientosGrid asientosGrid, String str){
         this.remove(grid);
         this.remove(titulo);

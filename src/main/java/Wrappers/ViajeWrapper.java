@@ -14,6 +14,10 @@ public class ViajeWrapper extends JPanel {
     Viaje viaje;
     JButton boton;
 
+    /**
+     * Representacion grafica un viaje.
+     * @param viaje viaje al cual representar en la GUI.
+     */
     public ViajeWrapper(Viaje viaje){
         boton = new JButton(String.valueOf(viaje.getId()) + "       " + viaje.getSalida()+ "-"+ viaje.getDestino());
         add(boton);

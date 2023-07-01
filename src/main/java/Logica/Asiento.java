@@ -1,5 +1,9 @@
 package Logica;
 
+
+/**
+  * Representa un asiento dentro de un viaje.
+ */
 public class Asiento {
 
     public enum TipoAsiento {
@@ -11,7 +15,11 @@ public class Asiento {
     private boolean select;
     private boolean comprado;
 
-
+    /***
+     *
+     * @param id numero de asiento
+     * @param type Tipo de asiento
+     */
     public Asiento(int id, TipoAsiento type){
         this.id = id;
         this.type = type;
@@ -23,6 +31,10 @@ public class Asiento {
 
     public TipoAsiento getType() { return type;}
 
+    /***
+     * Selecciona el asiento
+     * @throws AsientoInvalido si el asiento esta comprado.
+     */
     public void select() throws AsientoInvalido {
         if(!comprado){
             select = true;

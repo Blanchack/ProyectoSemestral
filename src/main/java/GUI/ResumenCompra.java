@@ -15,7 +15,7 @@ public class ResumenCompra extends JPanel {
     public Viaje viaje;
 
 
-    public ResumenCompra(){
+    private ResumenCompra(){
         this.setLayout(new GridLayout(0,1));
 
         JLabel msj = new JLabel("NO HAY VIAJE SELECCIONADO");
@@ -40,6 +40,9 @@ public class ResumenCompra extends JPanel {
             updateCompra();
     }
 
+    /**
+     * Actualizacion del Resumen de compras.
+     */
     public void updateCompra(){
         this.removeAll();
 
