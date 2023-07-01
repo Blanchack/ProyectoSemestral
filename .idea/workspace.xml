@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44bfed61-fe03-4e6c-a1ce-172577da90d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="44bfed61-fe03-4e6c-a1ce-172577da90d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +72,7 @@
       <recent name="Logica" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViajeTest">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.Main" />
       <module name="ProyectoSemestral" />
@@ -113,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686062236968</updated>
       <workItem from="1686062238170" duration="814000" />
-      <workItem from="1688169138045" duration="5201000" />
+      <workItem from="1688169138045" duration="5543000" />
     </task>
     <servers />
   </component>
